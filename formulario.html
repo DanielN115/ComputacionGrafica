@@ -3,30 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="formulario.css">
+    <script src="https://kit.fontawesome.com/428ba37896.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>FORMULARIO REGISTRO</title>
 </head>
+
 <body>
   <form action="formulario.php" method="post">
     <hr>
     <h1>FORMULARIO DE DATOS</h1>
-    <hr>
-    <div class="Campos">
-      <input type="text" name="identificacion" size="30" placeholder="IDENTIFICACION">*<br>
-      <input type="text" name="nombre" size="30" placeholder="NOMBRE">*<br>
-      <input type="text" name="genero" size="30" placeholder="GENERO"><br>
-      <input type="text" name="direccion" size="30" placeholder="DIRECCION"><br>
-      <input type="text" name="barrio" size="30" placeholder="BARRIO"><br>
-      <input type="text" name="telefono" size="30" placeholder="TELEFONO">*<br>
-      <input type="date" name="fechanac" size="30" placeholder="FECHA NACIMIENTO">*<br>
-      <input type="text" name="correo" size="30" placeholder="CORREO">*<br>
+    <h2>
+       
+      <ul>
+        <input type="text" name="identificacion" size="30" placeholder="IDENTIFICACION">*<br>
+        <input type="text" name="nombre" size="30" placeholder="NOMBRE">*<br>
+      </ul>
+      <ul>
+        <input type="text" name="genero" size="30" placeholder="GENERO">*<br>
+        <input type="text" name="direccion" size="30" placeholder="DIRECCION">*<br>   
+      </ul>
+      <ul>
+        <input type="text" name="barrio" size="30" placeholder="BARRIO">*<br>
+        <input type="text" name="telefono" size="30" placeholder="TELEFONO">*<br>
+      </ul>
+      <ul>
+        <li>
+          <input type="date" name="fechanac" size="30" placeholder="FECHA NACIMIENTO">*<br>
+        </li>
+        <input type="text" name="correo" size="30" placeholder="CORREO">*<br>
+      </ul>
+      <ul>
       <input type="text" name="vercorreo" size="30" placeholder="VERIFICAR CORREO">*<br>
       <input type="password" name="contrasena" size="30" placeholder="CONTRASEÑA">*<br>
-      <input type="password" name="vercontrasena" size="30" placeholder="VERIFICAR CONTRASEÑA">*<br>
-    </div>
-    <hr><p></p>
-    <input type="submit" value="Enviar">
-    <input type="reset" value="Borrar">
+      </ul>
+      <ul>
+        <input type="password" name="vercontrasena" size="30" placeholder="VERIFICAR CONTRASEÑA">*<br>
+      </ul>
+
+    </h2>
+
+    <h3>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Borrar">
+    </h3>
+
     
   </form>
 

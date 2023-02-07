@@ -65,19 +65,29 @@ nav{
     padding-top: 10px;
     box-sizing: border-box;
     list-style: none;
+    
+   
 }
 
 nav ul li a{   
+    width: 90%;
     display: inline;
     text-decoration: none;
     color: #fff;   
+    position: relative;
+    left: 70px;
+    text-align: center;
+    top: 3px;
+    
 }
 
 h1 ul span{   
+
     font-size: 20px;
     color: #fff;
     position: relative;
     top: 17px;
+   
 }
 
 .buscador{
@@ -156,6 +166,8 @@ h1 ul span{
     text-align: center;
     top: -25px;
     right: 100px;
+    position: relative;
+    top: -2px;
 }
 
 
@@ -168,7 +180,9 @@ h1 ul span{
     text-align: center;
     top: -20px;
     right: 90px;
-    border-left: 1px solid  rgba(255, 255, 255, 0.24);   
+    border-left: 1px solid  rgba(255, 255, 255, 0.24); 
+    position: relative;
+    top: -2px;
 }
 
 .carrito span{  
@@ -181,6 +195,8 @@ h1 ul span{
     top: -20px;
     right: 80px;
     border-left: 1px solid  rgba(255, 255, 255, 0.24);   
+    position: relative;
+    top: -2px;
 }
 
 .iniciarsesion span:hover{
