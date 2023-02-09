@@ -130,6 +130,7 @@ h3 input{
     color: white;
     padding-left: 100px;
     padding-right: 100px;
+    display: block;
 }  
 
 h3 input:active{
