@@ -5,39 +5,54 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.6rem;
-
-
-
-   
-    
+  
 }
 
-/* Titulo */
+/* Encabezado -----------*/
+
+header{
+    width: 100%;
+    height: 60px;
+}
+
+.logo{
+    width: 7%;
+    height: 50px;
+    position: relative;
+    top: 5px;
+    right: 10px;
+    float: left;
+    margin-left: 40px;    
+}
+
+/* Titulo ---------------*/
 
 h1{
 
 position: relative;    
-width: 20%;
-
+left: 550px;
+display: inline-block;
+top: 20px;
+font-family: Arial,Roboto,"-apple-system",Helvetica,sans-serif;
 
 }
 
 
-/*formulario*/ 
+/*formulario ----------*/ 
 
 h2{
 
-    width: 47%;
+    width: 40%;
     display: block;
     position: relative;
     top: 50px;
-    left: 300px;
-    background-color: aquamarine;
+    left: 390px;
     text-align: center;
+
     
 }
 
-/* espacio entre contenedores */
+/* cajas de texto ------------- */
 
 h2 ul {
 
@@ -45,26 +60,78 @@ h2 ul {
     
     padding: 0;
     display: flex;
-    margin: 1;
-    padding: 10px;
     margin: 5px;
+    padding: 5px;
     border-radius: 10px;
-    width: 100%;
-    width: 100%;
+    background-color: transparent;
+   
+   
     
 }
 
 
-
 h2 ul input{
-
  
-   margin-left: 10px;
-   
+font-size: small;  
+height: 25px; 
+/*border-radius: 10px;*/
+margin-left: 10px;
+border-width: 1px;
+text-align: unset; 
+border-top: none;
+border-left: none;
+border-right: none;
 }
+
+
+/* caja texto fecha mod*/
 
 h2 ul li input{
 
     padding-left: 70px;
     padding-right: 70px;
+}
+
+/* logo astronauta --------------------------*/
+
+.iconuser{
+
+  
+    width: 20%;
+    text-align: center;
+    position: relative;
+    left: 520px;
+    top: 40px;
+}
+
+.iconuser span{
+
+   font-size: 100px;
+    background-color:transparent;
+}
+
+
+/* boton enviar */
+
+h3{
+
+    position: relative;
+    left: 540px;
+    top: 80px;
+    display: inline-block;
+    background-color:orangered;
+    
+    
+}
+
+h3 input{
+    background-color: orangered;
+    border-color: orangered;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+}  
+
+h3 input:active{
+    background: rgb(187, 57, 9);
 }
