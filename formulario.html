@@ -30,29 +30,29 @@
     <h2>
        
       <ul>
-        <input type="text" name="identificacion" size="30" placeholder="IDENTIFICACION">*<br>
-        <input type="text" name="nombre" size="30" placeholder="NOMBRE">*<br>
+        <input type="text" name="identificacion" size="30" placeholder="IDENTIFICACION" required="" pattern="[0-9]+" minlength="10" maxlength="10"><br>
+        <input type="text" name="nombre" size="30" placeholder="NOMBRE" required="" minlength="3" maxlength="30"><br>
       </ul>
       <ul>
-        <input type="text" name="genero" size="30" placeholder="GENERO">*<br>
-        <input type="text" name="direccion" size="30" placeholder="DIRECCION">*<br>   
+        <input type="text" name="genero" size="30" placeholder="GENERO" required="" minlength="1" maxlength="1"  pattern="[M-F]"><br>
+        <input type="text" name="direccion" size="30" placeholder="DIRECCION" required="" minlength="7" maxlength="30"><br>   
       </ul>
       <ul>
-        <input type="text" name="barrio" size="30" placeholder="BARRIO">*<br>
-        <input type="text" name="telefono" size="30" placeholder="TELEFONO">*<br>
+        <input type="text" name="barrio" size="30" placeholder="BARRIO" required="" maxlength="30"><br>
+        <input type="text" name="telefono" size="30" placeholder="TELEFONO" required="" pattern="[0-9]+" minlength="10" maxlength="10"><br>
       </ul>
       <ul>
         <li>
-          <input type="date" name="fechanac" size="30" placeholder="FECHA NACIMIENTO">*<br>
+          <input type="date" min="2015-01-1" max ="2015-12-31"name="fechanac" size="30" placeholder="FECHA NACIMIENTO" required=""><br>
         </li>
-        <input type="text" name="correo" size="30" placeholder="CORREO">*<br>
+        <input type="text" name="correo" size="30" placeholder="CORREO" required="" maxlength="30"><br>
       </ul>
       <ul>
-      <input type="text" name="vercorreo" size="30" placeholder="VERIFICAR CORREO">*<br>
-      <input type="password" name="contrasena" size="30" placeholder="CONTRASEÑA">*<br>
+      <input type="text" name="vercorreo" size="30" placeholder="VERIFICAR CORREO" required="" maxlength="30"><br>
+      <input type="password" name="contrasena" size="30" placeholder="CONTRASEÑA" required="" maxlength="6"><br>
       </ul>
       <ul>
-        <input type="password" name="vercontrasena" size="30" placeholder="VERIFICAR CONTRASEÑA">*<br>
+        <input type="password" name="vercontrasena" size="30" placeholder="VERIFICAR CONTRASEÑA" required="" maxlength="6"><br>
       </ul>
 
     </h2>
