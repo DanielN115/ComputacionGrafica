@@ -1,12 +1,12 @@
-var carouselItems = document.querySelectorAll('.carousel-item');
-var currentCarouselItem = 0;
-var carouselInterval = setInterval(nextCarouselItem, 5000);
+var carruselItems = document.querySelectorAll('.carrusel-item');
+var currentcarruselItem = 0;
+var carruselInterval = setInterval(nextcarruselItem, 50);
 
-function nextCarouselItem() {
-  carouselItems[currentCarouselItem].classList.remove('active');
-  currentCarouselItem++;
-  if (currentCarouselItem >= carouselItems.length) {
-    currentCarouselItem = 0;
+function nextcarruselItem() {
+  carruselItems[currentcarruselItem].classList.remove('active');
+  currentcarruselItem++;
+  if (currentcarruselItem >= carruselItems.length) {
+    currentcarruselItem = 0;
   }
-  carouselItems[currentCarouselItem].classList.add('active');
+  carruselItems[currentcarruselItem].classList.add('active');
 }

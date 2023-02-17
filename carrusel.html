@@ -1,26 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style_banner.css"> 
+    <link rel="stylesheet" href="estilos/style_carrusel.css">
+    <link rel="stylesheet" href="estilos/style_inicio.css">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="carousel">
-        <div class="carousel-item active">
-          <img src="image1.jpg" alt="Image 1">
+
+    <div class="banner"> <!-- banner principal --> 
+            
+        <div class="cont_logo"><!-- contenedor del logo -->
+            <img class="logo" src="imagenes/Variedades Sebastian.png">
+        </div> <!-- contenedor del logo -->
+    
+        <div class="cont_central"> <!-- contenedor del cuadro de busqueda -->
+            <input class="busqueda" type="text" name="busqueda" id="busqueda" placeholder="  Busqueda de Produtos"> <!-- cuadro de busqueda --> 
+    
+            <div class="paginas"> <!-- contenedor de los botones de las paginas -->
+    
+                <button class="btn_paginas" name="inicio">Inicio</button>
+                <button class="btn_paginas">Papeleria</button>
+                <button class="btn_paginas">Piñateria</button>
+                <button class="btn_paginas">Servicios</button>
+                <button class="btn_paginas">Contactenos</button>
+    
+            </div>
         </div>
-        <div class="carousel-item">
-          <img src="image2.jpg" alt="Image 2">
+    
+        <div class="cont_cuenta"> <!-- contenedor de los iconos de usuario y carrito -->
+            <div class="cont_usuario"> <!-- contenedor del logo de usuario -->
+                <img class="user" src="iconos/user.png">
+                <h4>Cuenta</h4>
+            </div>
+            <div class="cont_carrito"> <!-- contenedor del logo del carrito -->
+                <img class="carrito" src="iconos/shopping-cart.png">
+                <h4>Carrito</h4>
+            </div>
         </div>
-        <div class="carousel-item">
-          <img src="image3.jpg" alt="Image 3">
+    
+    
+    </div> <!-- fin del banner -->
+
+    <div class="cuerpo">
+        
+        <div class="contenedor_carrusel">
+            
+            <div class="item_carrusel" id="item_carrusel_1">
+                
+                <div class="tarjeta_carrusel" id="imagen1">
+                    a
+                </div>
+    
+                <div class="flechas">
+                    <a href="#item_carrusel_3">
+                        <i>I</i>
+                    </a>
+                    <a href="#item_carrusel_2">
+                        <i>D</i>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="item_carrusel" id="item_carrusel_2">
+                <div class="tarjeta_carrusel" id="imagen2">
+                    b
+                </div>
+    
+                <div class="flechas">
+                    <a href="#item_carrusel_1">
+                        <i>I</i>
+                    </a>
+                    <a href="#item_carrusel_3">
+                        <i>D</i>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="item_carrusel" id="item_carrusel_3">
+                <div class="tarjeta_carrusel" id="imagen3">
+                    c
+                </div>
+    
+                <div class="flechas">
+                    <a href="#item_carrusel_2">
+                        <i>I</i>
+                    </a>
+                    <a href="#item_carrusel_1">
+                        <i>D</i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="carousel-item">
-          <img src="image4.jpg" alt="Image 4">
-        </div>
-      </div>
+    </div>
 </body>
 </html>
   
