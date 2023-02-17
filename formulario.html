@@ -1,68 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="formulario.css">
-    <script src="https://kit.fontawesome.com/428ba37896.js"></script>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>FORMULARIO REGISTRO</title>
+    <link rel="stylesheet" href="estilos/style_banner.css"> <!-- estilo del banner -->
+    <link rel="stylesheet" href="estilos/style_inicio.css"> <!-- estilo de los botones del banner -->
+    <link rel="stylesheet" href="estilos/style_formulario.css">
+    
+    <script src="https://kit.fontawesome.com/428ba37896.js"></script>
+
+    <title>Registro Variedades Sebastian</title> <!-- Nombre de la pagina -->
 </head>
 
 <body>
-  <form action="formulario.php" method="post">
 
-    <header> 
-      <div class="logo">
-        <img src="https://assets.linio.com/assets/images/logos/logo-linio-f5f1be20a6.svg" width="80" height="40">
+  <div class="banner"> <!-- banner principal --> 
+            
+    <div class="cont_logo"><!-- contenedor del logo -->
+        <img class="logo" src="imagenes/Variedades Sebastian.png">
+    </div> <!-- contenedor del logo -->
+
+    <div class="cont_central"> <!-- contenedor del cuadro de busqueda -->
+        <input class="busqueda" type="text" name="busqueda" id="busqueda" placeholder="  Busqueda de Produtos"> <!-- cuadro de busqueda --> 
+
+        <div class="paginas"> <!-- contenedor de los botones de las paginas -->
+
+            <button class="btn_paginas" name="inicio">Inicio</button>
+            <button class="btn_paginas">Papeleria</button>
+            <button class="btn_paginas">Piñateria</button>
+            <button class="btn_paginas">Servicios</button>
+            <button class="btn_paginas">Contactenos</button>
+
+        </div>
+    </div>
+
+    <div class="cont_cuenta"> <!-- contenedor de los iconos de usuario y carrito -->
+        <div class="cont_usuario"> <!-- contenedor del logo de usuario -->
+            <img class="user" src="iconos/user.png">
+            <h4>Cuenta</h4>
+        </div>
+        <div class="cont_carrito"> <!-- contenedor del logo del carrito -->
+            <img class="carrito" src="iconos/shopping-cart.png">
+            <h4>Carrito</h4>
+        </div>
+    </div>
+
+
+</div>
+
+
+<form class="cont_formulario" name="form" action="php/registro.php" method="post"> <!-- contenedor del formulario y se agrega la accion de conexion con la base de datos -->
+
+  <div class="cont_formulario_izq"><!-- contenedor del formulario izquierda -->
+      <!-- informacion personal -->
+      <div class="cont_titulo"><!-- contenedor del titulo -->
+          <h3 class="titulo">Información Personal</h3>
       </div>
-    </header>
-    
-    <hr>
-    <h1>CREA UNA NUEVA CUENTA</h1>
-      
-     <div class="iconuser">   
-      <span class="fa-solid fa-user-astronaut"></span>
-     </div>
+      <div class="cont_nombres"> <!-- contenedor de los nombres y apellidos -->
+          <div class="nombres">
+              <p>Nombres</p>
+              <input class="cuadro_nom_apell" type="text" placeholder="Ingrese sus nombres"> <!-- cuadro de los nombres -->
+          </div>
+          <div class="apellidos">
+              <p>Apellidos</p>
+              <input class="cuadro_nom_apell" type="text" placeholder="Ingrese sus apellidos"> <!-- cuadro de los apellidos -->
+          </div>
+      </div>
+      <div class="cont_nac_ced">
+          <div class="cont_fecha_nac"> <!-- contenedor de la fecha de nacimiento -->
+              <p>Fecha de Nacimiento</p>
+              <input class="fecha" type="date" placeholder="dia"> <!-- cuadro del ingreso de la fecha -->
+          </div>
+          <div class="cont_id"> <!-- contenedor de la cedula -->
+              <p>Cedula de Ciudadania</p>
+              <input class="cedula" type="text" placeholder="Ingrese su cedula"> <!-- cuadro de la cedula -->
+          </div>
+      </div>
+      <!-- informacion cuenta -->
+      <div class="cont_titulo"> <!-- contenedor del titulo -->
+          <h3 class="titulo">Cuenta</h3>
+      </div>
+      <div class="cont_correo"> <!-- contenedor del correo -->
+          <p>Correo</p>
+          <input class="cuadro" type="text" placeholder="Ingrese su correo"> <!-- cuadro del correo -->
+      </div>
+      <div class="cont_pass"> <!-- contenedor de la contraseña -->
+          <p>Contraseña</p>
+          <input class="cuadro" type="password" placeholder="Ingrese su contraseña"> <!-- cuadro de la contraseña -->
+      </div>
+      <div class="cont_pass_conf"> <!-- contenedor de la confirmacion de la cedula -->
+          <p>Verificación de Contraseña</p>
+          <input class="cuadro" type="password" placeholder="Confirme su contraseña"> <!-- cuadro de la verificación de contraseña -->
+      </div>
+  </div>
 
-    <h2>
-       
-      <ul>
-        <input type="text" name="identificacion" size="30" placeholder="IDENTIFICACION" required="" pattern="[0-9]+" minlength="10" maxlength="10"><br>
-        <input type="text" name="nombre" size="30" placeholder="NOMBRE" required="" minlength="3" maxlength="30"><br>
-      </ul>
-      <ul>
-        <input type="text" name="genero" size="30" placeholder="GENERO" required="" minlength="1" maxlength="1"  pattern="[M-F]"><br>
-        <input type="text" name="direccion" size="30" placeholder="DIRECCION" required="" minlength="7" maxlength="30"><br>   
-      </ul>
-      <ul>
-        <input type="text" name="barrio" size="30" placeholder="BARRIO" required="" maxlength="30"><br>
-        <input type="text" name="telefono" size="30" placeholder="TELEFONO" required="" pattern="[0-9]+" minlength="10" maxlength="10"><br>
-      </ul>
-      <ul>
-        <li>
-          <input type="date" min="2015-01-1" max ="2015-12-31"name="fechanac" size="30" placeholder="FECHA NACIMIENTO" required=""><br>
-        </li>
-        <input type="text" name="correo" size="30" placeholder="CORREO" required="" maxlength="30"><br>
-      </ul>
-      <ul>
-      <input type="text" name="vercorreo" size="30" placeholder="VERIFICAR CORREO" required="" maxlength="30"><br>
-      <input type="password" name="contrasena" size="30" placeholder="CONTRASEÑA" required="" maxlength="6"><br>
-      </ul>
-      <ul>
-        <input type="password" name="vercontrasena" size="30" placeholder="VERIFICAR CONTRASEÑA" required="" maxlength="6"><br>
-      </ul>
+  <div class="cont_formulario_der"><!-- contenedor del formulario derecha -->
+      <!-- informacion de contacto -->
+      <div class="cont_titulo"> <!-- contenedor del titulo -->
+          <h3 class="titulo">Información de Contacto</h3>
+      </div>
 
-    </h2>
+      <div class="cont_direccion_barrio"> <!-- contenedor de la direccion y barrio -->
+          <div class="cont_direccion"> <!-- contenedor del cuadro de la direccion -->
+              <p>Dirección</p>
+              <input class="direccion" type="text" placeholder="Ingrese su dirección de residencia"> <!-- cuadro de la dirección -->
+          </div>
+          <div class="cont_barrio"> <!-- contenedor del barrio -->
+              <p>Barrio</p>
+              <input class="barrio" type="text" placeholder="Ingrese su barrio"> <!-- cuadro del barrio -->
+          </div>
+      </div>
+      <div class="cont_telefono"> <!-- contenedor del telefono -->
+          <p>Telefono</p>
+          <input class="telefono" type="text" placeholder="Ingrese su numero de telefono"> <!-- cuadro del barrio -->
+      </div>
+      <div class="cont_terminos"> <!-- contenedor de los terminos y condiciones -->
+          <p>Al registrarse acepta los terminos y condiciones</p>
+      </div>
+      <div class="cont_botones"> <!-- contenedor de los botones del formulario -->
+          <input class="boton" type="submit" value="Enviar"> <!-- boton de enviar los datos hacia el formulario -->
+          <input class="boton" type="reset" value="Borrar"> <!-- boton de borrar los datos del formulario -->
+      </div>
+  </div>
 
-    <h3>
-      <input type="submit" value="Enviar" class="btnenviar">
-    </h3>
-
-    
-  </form>
+</form>
 
 </body>
 

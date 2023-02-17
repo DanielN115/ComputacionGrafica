@@ -1,0 +1,11 @@
+.cont_formulario { /* estilo del contenedor general del formulario */
+    margin-left: 250px;
+    margin-top:30px;
+    width: 80%;
+    height: 550px;
+    background-color: rgba(126, 217, 87, 0.192);
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+}
+

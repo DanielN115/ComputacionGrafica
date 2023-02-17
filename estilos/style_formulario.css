@@ -1,0 +1,141 @@
+.cont_formulario { /* estilo del contenedor general del formulario */
+    margin-left: 250px;
+    margin-top:30px;
+    width: 80%;
+    height: 550px;
+    background-color: rgba(126, 217, 87, 0.192);
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.titulo { /* estilo de los titulos de cada categoria */
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(88, 102, 81);
+}
+
+.cont_titulo {
+    height: 20px;
+}
+
+p { /* estilo de los titulos de cada cuadro */
+    color: rgb(88, 102, 81);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.cont_formulario_izq { /* estilo de la clumna izquierda del formulario */
+    margin-left: 15px;
+    margin-top:10px;
+    height: 530px;
+    /* background-color: rgba(145, 158, 139, 0.685); */
+}
+
+.cont_formulario_der { /* estilo de la clumna derecha del formulario */
+    margin-right: 15px;
+    margin-top:10px;
+    height: 530px;
+    /* background-color: rgba(145, 158, 139, 0.685); */
+}
+
+.cont_nombres{
+    display: flex;
+}
+
+.cont_nac_ced{
+    display: flex;
+}
+
+.cont_direccion_barrio {
+    display: flex;
+}
+
+.cuadro_nom_apell{ /* estilo del cuadro de los nombres y apellidos */
+    border: none;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.apellidos{ /* contenedor de apellidos */
+    width: 45%;
+    margin-left: 20px;
+}
+
+.nombres{ /* contenedor de los nombres  */
+    width: 45%;
+}
+
+.fecha { /* estilo del cuadro de fecha */
+    border: none;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cont_id { /* contenedor del cuadro de la cedula */
+    width: 45%;
+    margin-left: 40px;
+}
+
+.cedula { /* cuadro de la cedula */
+    border: none;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cuadro { /* estilo de los cuadros de correo, contraseña y su verificación */
+    border: none;
+    width: 70%;
+    height: 30px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cont_direccion { /* contenedor del cuadro de dirección */
+    width: 50%;
+    margin-right: 20px;
+}
+
+.direccion { /* estilo del cuadro de dirección */
+    border: none;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.barrio { /* estilo del cuadro de barrio */
+    border: none;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cont_telefono { /* contenedor del cuadro del telefono */
+    width: 50%;
+    margin-right: 20px;
+}
+
+.telefono{ /* estilo del cuadro del telefono */
+    border: none;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton{ /* estilo de los botones de enciar y borrar */
+    width: 30%;
+    background: rgb(88, 102, 81);
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+    color: #ffffff;
+
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilos/style_banner.css"> <!-- estilo del banner -->
+    <link rel="stylesheet" href="estilos/style_inicio.css"> <!-- estilo de los botones del banner -->
+    
+    <script src="https://kit.fontawesome.com/428ba37896.js"></script>
+
+    <title>Registro Variedades Sebastian</title> <!-- Nombre de la pagina -->
+</head>
+
+<body>
+
+  <div class="banner"> <!-- banner principal --> 
+            
+    <div class="cont_logo"><!-- contenedor del logo -->
+        <img class="logo" src="imagenes/Variedades Sebastian.png">
+    </div> <!-- contenedor del logo -->
+
+    <div class="cont_central"> <!-- contenedor del cuadro de busqueda -->
+        <input class="busqueda" type="text" name="busqueda" id="busqueda" placeholder="  Busqueda de Produtos"> <!-- cuadro de busqueda --> 
+
+        <div class="paginas"> <!-- contenedor de los botones de las paginas -->
+
+            <button class="btn_paginas" name="inicio">Inicio</button>
+            <button class="btn_paginas">Papeleria</button>
+            <button class="btn_paginas">Piñateria</button>
+            <button class="btn_paginas">Servicios</button>
+            <button class="btn_paginas">Contactenos</button>
+
+        </div>
+    </div>
+
+    <div class="cont_cuenta"> <!-- contenedor de los iconos de usuario y carrito -->
+        <div class="cont_usuario"> <!-- contenedor del logo de usuario -->
+            <img class="user" src="iconos/user.png">
+            <h4>Cuenta</h4>
+        </div>
+        <div class="cont_carrito"> <!-- contenedor del logo del carrito -->
+            <img class="carrito" src="iconos/shopping-cart.png">
+            <h4>Carrito</h4>
+        </div>
+    </div>
+
+
+</div>
+
+
+  <form action="formulario.php" method="post">    
+    <hr>
+    <h1>CREA UNA NUEVA CUENTA</h1>
+      
+     <div class="iconuser">   
+      <span class="fa-solid fa-user-astronaut"></span>
+     </div>
+
+    <h2>
+       
+      <ul>
+        <input type="text" name="identificacion" size="30" placeholder="IDENTIFICACION" required="" pattern="[0-9]+" minlength="10" maxlength="10"><br>
+        <input type="text" name="nombre" size="30" placeholder="NOMBRE" required="" minlength="3" maxlength="30"><br>
+      </ul>
+      <ul>
+        <input type="text" name="genero" size="30" placeholder="GENERO" required="" minlength="1" maxlength="1"  pattern="[M-F]"><br>
+        <input type="text" name="direccion" size="30" placeholder="DIRECCION" required="" minlength="7" maxlength="30"><br>   
+      </ul>
+      <ul>
+        <input type="text" name="barrio" size="30" placeholder="BARRIO" required="" maxlength="30"><br>
+        <input type="text" name="telefono" size="30" placeholder="TELEFONO" required="" pattern="[0-9]+" minlength="10" maxlength="10"><br>
+      </ul>
+      <ul>
+        <li>
+          <input type="date" min="2015-01-1" max ="2015-12-31"name="fechanac" size="30" placeholder="FECHA NACIMIENTO" required=""><br>
+        </li>
+        <input type="text" name="correo" size="30" placeholder="CORREO" required="" maxlength="30"><br>
+      </ul>
+      <ul>
+      <input type="text" name="vercorreo" size="30" placeholder="VERIFICAR CORREO" required="" maxlength="30"><br>
+      <input type="password" name="contrasena" size="30" placeholder="CONTRASEÑA" required="" maxlength="6"><br>
+      </ul>
+      <ul>
+        <input type="password" name="vercontrasena" size="30" placeholder="VERIFICAR CONTRASEÑA" required="" maxlength="6"><br>
+      </ul>
+
+    </h2>
+
+    <h3>
+      <input type="submit" value="Enviar" class="btnenviar">
+    </h3>
+
+    
+  </form>
+
+</body>
+
+<!-- aqui estoy-->
+</html>
