@@ -49,24 +49,24 @@
         </div>
 
 
-        <form action="sesion.php" method="POST">
-
-            <div class="content">
+        <form action="php/sesion.php" method="POST">
+            <div class="contenedor">
+                <div class="formulario">
+                    <div class="logo_sesion">
+                        <span class="fa fa-circle-user" style="color: rgb(81, 138, 56);"> </span>
+                    </div>
+                    
+                    <div class="sesion">
+                        <input type="text" name="usuario" placeholder="Usuario"> *<br>
+                        <input type="password" name="contraseña" placeholder="Contraseña"> *<br>
+                    </div>
+                            
+                    <div class="crear_cuenta"> <a href="formulario.html">Crea tu cuenta </a> </div>
                 
-                <div class="logo_sesion">
-                    <span class="fa fa-circle-user"> </span>
+                    <h3>
+                        <button type="submit" class="btn_ingres" >Login</button>
+                    </h3>
                 </div>
-                
-                <div class="sesion">
-                    <input type="text" name="usuario" placeholder="Usuario"> *<br>
-                    <input type="password" name="contraseña" placeholder="Contraseña"> *<br>
-                </div>
-                        
-                <div class="crear_cuenta"> <a href="formulario.html">Crea tu cuenta </a> </div>
-            
-                <h3>
-                    <button type="submit" class="btn_ingres" >Login</button>
-                </h3>
             </div>
         </form>
     </body>

@@ -9,7 +9,7 @@
 
     margin-top: 30px;
     margin-block-end: 30px;
-    font-size: 15px;
+    font-size: 20px;
     border-top: none;
     border-left: 1px;
     border-right: none;
@@ -18,15 +18,19 @@
     
 }
 
-.content{
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
     background: rgba(126, 217, 87, 0.192);
     width: 50%;
     position: fixed;
     text-align: center;
-    padding-block-end: 80px;
+    padding-block-end: 50px;
     padding-top: 40px;
-    margin-top: 5%;
-    margin
+    margin-top: 2%;
 }
 
 .logo_sesion span{
@@ -34,9 +38,7 @@
     background-color:transparent;
     width: fit-content;
     font-size: 120px;
-    position: relative;
-    
-    
+    position: relative; 
 }
 
 .btn_ingres{
