@@ -1,10 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 h1 {
     text-align: center;
     margin-top: 50px;
+    color: rgb(81, 138, 56);
 }
+
+h2 {
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: rgb(81, 138, 56);
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -40,15 +48,15 @@ h1 {
 .card button {
     margin-top: 10px;
     padding: 8px 16px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: rgb(126, 217, 87);
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 .card button:hover {
-    background-color: #3e8e41;
+    background-color: rgb(126, 217, 87);;
 }
 .quantity {
     margin-top: 10px;
@@ -63,4 +71,9 @@ h1 {
     width: 50px;
     text-align: center;
     font-size: 16px;
+}
+
+.img{
+    width: 200px;
+    height: 200px;
 }
