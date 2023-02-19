@@ -1,11 +1,66 @@
-.cont_formulario { /* estilo del contenedor general del formulario */
-    margin-left: 250px;
-    margin-top:30px;
-    width: 80%;
-    height: 550px;
-    background-color: rgba(126, 217, 87, 0.192);
-    display: grid;
-    grid-gap: 40px;
-    grid-template-columns: repeat(2, 1fr);
+.sesion{
+ 
+   padding: 10px;
+   margin: 10px;
+   
 }
 
+.sesion input{
+
+    margin-top: 30px;
+    margin-block-end: 30px;
+    font-size: 15px;
+    border-top: none;
+    border-left: 1px;
+    border-right: none;
+    background-color: transparent;
+    border-color: rgb(81, 138, 56);
+    
+}
+
+.content{
+    background: rgba(126, 217, 87, 0.192);
+    width: 50%;
+    position: fixed;
+    text-align: center;
+    padding-block-end: 80px;
+    padding-top: 40px;
+    margin-top: 5%;
+    margin
+}
+
+.logo_sesion span{
+
+    background-color:transparent;
+    width: fit-content;
+    font-size: 120px;
+    position: relative;
+    
+    
+}
+
+.btn_ingres{
+    background-color: rgb(81, 138, 56);;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.761);
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+
+}
+
+.crear_cuenta{
+
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.crear_cuenta a {
+    text-decoration: none;
+    color: rgb(81, 138, 56);
+}

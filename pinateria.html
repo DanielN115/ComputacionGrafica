@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 	<head>
-		<title>Página de productos</title>
 		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
 		<link rel="stylesheet" href="estilos/style_productos.css">
 		<link rel="stylesheet" href="estilos/style_banner.css">
 		<link rel="stylesheet" href="estilos/style_inicio.css">
+
+		<script src="javascript/total_productos.js"></script>
+		
+		<title>Piñateria</title>
 	</head>
 	<body>
 		
@@ -112,19 +117,18 @@
 				</div>
 
 				<div class="card">
-					<img src="https://via.placeholder.com/200x200" alt="Producto 6">
-					<h2>Producto 2</h2>
-					<p>Descripción breve del producto.</p>
-					<p data-precio="60000" data-cantidad="1" id="precio6" value="60000">$60.000</p>
+					<img src="imagenes/pinateria/cortinas.jpeg" alt="Producto 6">
+					<h2>Cortinas</h2>
+					<p>Cortinas de diferentes colores para paredes.</p>
+					<p data-precio="10000" data-cantidad="1" id="precio6" value="10000">$ 10000</p>
 					<div class="quantity">
 						<label for="quantity6">Cantidad:</label>
 						<input type="number" id="quantity6" name="quantity6" min="1" max="20" value="1">
 					</div>
 					<button onclick="multiplicar6()">Agregar al carrito</button>
-					<p>El resultado es: <span id="resultado6"></span></p>
+					<p>El resultado es: $ <span id="resultado6"></span></p>
 				</div>
 			</div>
 		</div>
-		<script src="javascript/total_pinateria.js"></script>
 	</body>
 </html>

@@ -1,47 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
-    <script src="https://kit.fontawesome.com/428ba37896.js"></script>
-    <title>inicio_sesion</title>
-</head>
-<body>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="estilos/style_inicio_sesion.css">
+        <link rel="stylesheet" href="estilos/style_banner.css"> <!-- estilo del banner -->
+        <link rel="stylesheet" href="estilos/style_inicio.css"> <!-- estilo de los botones del banner -->
+        <link rel="stylesheet" href="estilos/style_formulario.css"> <!-- estilo del formulario -->
+        
+        <script src="https://kit.fontawesome.com/428ba37896.js"></script>
+        <title>Inicio de Sesion</title>
+    </head>
 
-      <form action="sesion.php" method="POST">
+    <body>
 
-        <header> 
-            <div class="logo">
-            <img src="https://assets.linio.com/assets/images/logos/logo-linio-f5f1be20a6.svg" width="80" height="40">
+        <div class="banner"> <!-- banner principal --> 
+                
+            <div class="cont_logo"><!-- contenedor del logo -->
+                <img class="logo" src="imagenes/Variedades Sebastian.png">
+            </div> <!-- contenedor del logo -->
+
+            <div class="cont_central"> <!-- contenedor del cuadro de busqueda -->
+                <input class="busqueda" type="text" name="busqueda" id="busqueda" placeholder="  Busqueda de Produtos"> <!-- cuadro de busqueda --> 
+
+                <div class="paginas"> <!-- contenedor de los botones de las paginas -->
+
+                    <button class="btn_paginas" name="inicio">Inicio</button>
+                    <button class="btn_paginas">Papeleria</button>
+                    <button class="btn_paginas">Piñateria</button>
+                    <button class="btn_paginas">Servicios</button>
+                    <button class="btn_paginas">Contactenos</button>
+
+                </div>
             </div>
-        </header>
 
-        <div class="content">
-
-            <!-- <div class="titulo">LOGIN</div> --> 
-            
-            <div class="logo_sesion">
-                <span class="fa fa-circle-user" style="color:orangered;"> </span>
+            <div class="cont_cuenta"> <!-- contenedor de los iconos de usuario y carrito -->
+                <div class="cont_usuario"> <!-- contenedor del logo de usuario -->
+                    <img class="user" src="iconos/user.png">
+                    <h4>Cuenta</h4>
+                </div>
+                <div class="cont_carrito"> <!-- contenedor del logo del carrito -->
+                    <img class="carrito" src="iconos/shopping-cart.png">
+                    <h4>Carrito</h4>
+                </div>
             </div>
-            
-            <div class="sesion">
-                <input type="text" name="usuario" size="30" placeholder="USUARIO">*<br>
-                <input type="password" name="contraseña" size="30" placeholder="CONTRASEÑA">*<br>
-            </div>
-                    
-            <div class="crear_cuenta"> <a href="formulario.html">Crea tu cuenta </a> </div>
-           
-            
-             <h3>
-                 <button type="submit" class="btn_ingres" >Login</button>
-            </h3>
-            
-
         </div>
 
-      </form>
-    
-</body>
+
+        <form action="sesion.php" method="POST">
+
+            <div class="content">
+                
+                <div class="logo_sesion">
+                    <span class="fa fa-circle-user"> </span>
+                </div>
+                
+                <div class="sesion">
+                    <input type="text" name="usuario" placeholder="Usuario"> *<br>
+                    <input type="password" name="contraseña" placeholder="Contraseña"> *<br>
+                </div>
+                        
+                <div class="crear_cuenta"> <a href="formulario.html">Crea tu cuenta </a> </div>
+            
+                <h3>
+                    <button type="submit" class="btn_ingres" >Login</button>
+                </h3>
+            </div>
+        </form>
+    </body>
 </html>
