@@ -25,7 +25,7 @@
 	 -->
 				<div class="paginas"> <!-- contenedor de los botones de las paginas -->
 	
-					<button class="btn_paginas" name="inicio" onclick="location.href='carrusel.html'">Inicio</button>
+					<button class="btn_paginas" name="inicio" onclick="location.href='inicio.html'">Inicio</button>
 					<button class="btn_paginas" name="papeleria" onclick="location.href='papeleria.html'">Papeleria</button>
 					<button class="btn_paginas" name="pinateria" onclick="location.href='pinateria.html'">Piñateria</button>
 					<button class="btn_paginas">Servicios</button>
@@ -34,10 +34,21 @@
 			</div>
 	
 			<div class="cont_cuenta"> <!-- contenedor de los iconos de usuario y carrito -->
+				
 				<div class="cont_usuario"> <!-- contenedor del logo de usuario -->
-					<img class="user" src="iconos/user.png">
-					<h4>Cuenta</h4>
-				</div>
+                    <img class="user" src="iconos/user.png">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Cuenta</a>
+                                <ul>
+                                    <li><a href="login.html">Iniciar Sesión</a></li>
+                                    <li><a href="formulario.html">Registrarse</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
 				<div class="cont_carrito"> <!-- contenedor del logo del carrito -->
 					<img class="carrito_icono" src="iconos/shopping-cart.png">
 					<button class="carrito" onclick="location.href='pago.html'">Carrito</button>
