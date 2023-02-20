@@ -15,8 +15,10 @@
 }
 
 .tarjeta_carrusel{
-    background-color: rgb(172, 255, 255);
+    /* background-color: rgb(172, 255, 255); */
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .flechas{
@@ -31,17 +33,17 @@
     padding: 20px;
 }
 
-#imagen1{
-    background-color: rgb(137, 158, 128);
+ #imagen1{
+    background-color: rgb(22, 199, 193);
 }
 
 #imagen2{
-    background-color: rgba(56, 97, 39, 0.774);
+    background-color: rgb(120, 67, 230);
 }
 
 #imagen3{
-    background-color: rgb(146, 144, 126);
-}
+    background-color: rgb(69, 230, 155);
+} 
 
 a {
     text-decoration: none;
@@ -54,8 +56,12 @@ i {
 
 .contenedor_carrusel img {
     margin-left: 25px;
-    width: 450px;
-    height: 450px;
     justify-content: center;
     margin-top: 25px;
+}
+
+.texto_carrusel {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 1);
+    margin-left: 50%;
 }
