@@ -26,7 +26,51 @@
         <input type="text" id="cuc" name="cuc" required placeholder="CUC">
         <br>
 		<button type="submit" name="submit" value="pagar">Pagar</button>
+		<br>
 		<button type="reset" name="reset" value="borrar">Borrar</button>
 	</form>
 </body>
+	
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+
+		input, select {
+			padding: 5px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 100%;
+			max-width: 300px;
+			font-size: 16px;
+			font-family: sans-serif;
+			color: #333;
+		}
+
+		button {
+			padding: 10px 20px;
+			background-color: #0066cc;
+			border: none;
+			border-radius: 5px;
+			color: #fff;
+			font-size: 18px;
+			font-family: sans-serif;
+			cursor: pointer;
+		}
+
+		button[type="reset"] {
+			background-color: #ccc;
+			color: #333;
+			margin-left: 10px;
+		}
+	</style>
 </html>
