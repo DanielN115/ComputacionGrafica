@@ -1,0 +1,80 @@
+.cont_formulario{
+    margin-left: 250px;
+    margin-top:30px;
+    width: 70%;
+    background-color: rgba(126, 217, 87, 0.192);
+    display: grid;
+    grid-gap: 5px;
+    justify-content: center;
+    padding-block-end: 40px;
+}
+
+.cont_formulario h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(88, 102, 81);
+}
+
+.cont_formulario label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cont_formulario p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+option{
+    font-size: 16px;
+}
+
+#tarjeta {
+    border: none;
+    height: 40px;
+    font-size: 16px;
+}
+
+#metodo-pago {
+    border: none;
+    height: 40px;
+    font-size: 16px;
+}
+
+.fecha_ven {
+    display: flex;
+    justify-content: space-between;
+}
+
+#mes {
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    width: 45%;
+}
+
+#anio {
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    width: 45%;
+}
+
+#cvc {
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    width: 40%;
+}
+
+.botnes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton{ /* estilo de los botones de enciar y borrar */
+    width: 30%;
+    background: rgb(88, 102, 81);
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+    color: #ffffff;
+}
