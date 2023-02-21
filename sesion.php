@@ -1,6 +1,7 @@
 <?php
 
 require 'conexion_postgres.php';
+
 session_start();
 
 $usuario=$_POST['usuario'];
@@ -12,8 +13,9 @@ $cantidad=pg_num_rows($consulta);
 if($cantidad>0){
     $_SESSION['nombre_usuario']=$usuario;
     header("location: ingreso.php");   
+    echo '<script language="javascript">alert("inicio de sesion exitoso");</script>';
 }else{
-    echo "Datos incorrectos";
+    echo '<script language="javascript">alert("datos incorrectos");</script>';;
 }
 
 ?>

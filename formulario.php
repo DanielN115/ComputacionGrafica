@@ -18,7 +18,4 @@ pg_close();
     echo "<br>";
     header("location:login.html");
     echo '<script language="javascript">alert("usuario registrado");</script>';
-
-
-
 ?>

@@ -1,5 +1,5 @@
 <?php require 'conexion_postgres.php'; 
-echo '<script language="javascript">alert("inicio de sesion exitoso");</script>';
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -41,14 +41,16 @@ echo '<script language="javascript">alert("inicio de sesion exitoso");</script>'
             
             <div class="cont_usuario"> <!-- contenedor del logo de usuario -->
                 <img class="user" src="iconos/user.png">
-                <tbody> 
-             <?php
-               ($obj=pg_fetch_object($consulta))?>
-            <tr>
-                <td> <?php echo $obj->sname;?> </td>
-                <td> <?php echo $obj->apellido; ?> </td>    
-            </tr>        
-            </tbody>
+            	<tbody> 
+						   <?php while($obj=pg_fetch_object($consulta)){?>
+						<tr>
+						   <td> <?php echo $obj->sname;?> </td>
+						   <td> <?php echo $obj->apellido; ?> </td>    
+						   </tr>
+								<?php } ?>            
+				   </tbody>
+
+
             </div>
 
             <div class="cont_carrito"> <!-- contenedor del logo del carrito -->
