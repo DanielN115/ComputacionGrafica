@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="stylesheet" href="estilos/style_inicio_sesion.css">
-        <link rel="stylesheet" href="estilos/style_banner.css"> <!-- estilo del banner -->
-        <link rel="stylesheet" href="estilos/style_inicio.css"> <!-- estilo de los botones del banner -->
-        <link rel="stylesheet" href="estilos/style_formulario.css"> <!-- estilo del formulario -->
-        
-        <script src="https://kit.fontawesome.com/428ba37896.js"></script>
-        <title>Inicio de Sesion</title>
-    </head>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="estilos/style_banner.css"> 
+		<link rel="stylesheet" href="estilos/style_carrusel.css">
+		<link rel="stylesheet" href="estilos/style_inicio.css">
+		<link rel="stylesheet" href="estilos/style_pago.css">
 
-    <body>
+		<script src="javascript/total_productos.js"></script>
+		
+		<title>Realice su Pago</title>
+	</head>
+	<body>
 
-        <div class="banner"> <!-- banner principal --> 
+		<div class="banner"> <!-- banner principal --> 
                 
             <div class="cont_logo"><!-- contenedor del logo -->
                 <img class="logo" src="imagenes/Variedades Sebastian.png">
@@ -36,7 +35,7 @@
             </div>
 
             <div class="cont_cuenta"> <!-- contenedor de los iconos de usuario y carrito -->
-                
+            
                 <div class="cont_usuario"> <!-- contenedor del logo de usuario -->
                     <img class="user" src="iconos/user.png">
                     <nav>
@@ -50,7 +49,7 @@
                         </ul>
                     </nav>
                 </div>
-                
+
                 <div class="cont_carrito"> <!-- contenedor del logo del carrito -->
                     <img class="carrito_icono" src="iconos/shopping-cart.png">
                     <button class="carrito" onclick="location.href='pag_pago.html'">Carrito</button>
@@ -58,26 +57,43 @@
             </div>
         </div>
 
+		<div class="cuerpo">
 
-        <form action="sesion.php" method="POST">
-            <div class="contenedor">
-                <div class="formulario">
-                    <div class="logo_sesion">
-                        <span class="fa fa-circle-user" style="color: rgb(81, 138, 56);"> </span>
-                    </div>
-                    
-                    <div class="sesion">
-                        <input type="text" name="usuario" placeholder="Usuario"> *<br>
-                        <input type="password" name="contraseña" placeholder="Contraseña"> *<br>
-                    </div>
-                            
-                    <div class="crear_cuenta"> <a href="formulario.html">Crea tu cuenta </a> </div>
-                
-                    <h3>
-                        <button type="submit" class="btn_ingres" >Login</button>
-                    </h3>
-                </div>
-            </div>
-        </form>
-    </body>
+			<form>
+
+				<div class="cont_formulario">
+
+					<h1>Formulario de Pago</h1>
+					
+					<label for="metodo-pago">Método de Pago:</label>
+
+					<select id="metodo-pago" name="metodo-pago" required>
+
+						<option value="">Selecciona una opción</option>
+						<option value="tarjeta">Tarjeta de Crédito</option>
+						<option value="transferencia">Tarjeta de Débito</option>
+					</select>
+					
+					<p>Número de Tarjeta</p>
+					<input type="text" id="tarjeta" name="tarjeta" required placeholder="">
+
+					<p>Fecha de Vencimiento</p>
+					<div class="fecha_ven">
+
+						<input type="text" id="mes" name="anio" required placeholder="Mes">
+						<input type="text" id="anio" name="anio" required placeholder="Año">
+					</div>
+
+					<p>Ingrese codigo cvc</p>
+					<input type="text" id="cvc" name="cvc" required placeholder="">
+					<br>
+		
+					<div class="botones">
+						<button onclick="continuar()" class="boton" type="submit" name="submit" value="pagar">Pagar</button>
+						<button class="boton" type="reset" name="reset" value="borrar">Borrar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
 </html>

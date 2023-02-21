@@ -52,87 +52,87 @@
 
                 <div class="cont_carrito"> <!-- contenedor del logo del carrito -->
                     <img class="carrito_icono" src="iconos/shopping-cart.png">
-                    <button class="carrito" onclick="location.href='pago.html'">Carrito</button>
+                    <button class="carrito" onclick="location.href='pag_pago.html'">Carrito</button>
                 </div>
             </div>
         </div>
 
 
-    <form class="cont_formulario" name="form" action="formulario.php" method="post"> <!-- contenedor del formulario y se agrega la accion de conexion con la base de datos -->
+        <form class="cont_formulario" name="form" action="formulario.php" method="post"> <!-- contenedor del formulario y se agrega la accion de conexion con la base de datos -->
 
-    <div class="cont_formulario_izq"><!-- contenedor del formulario izquierda -->
-        <!-- informacion personal -->
-        <div class="cont_titulo"><!-- contenedor del titulo -->
-            <h3 class="titulo">Información Personal</h3>
-        </div>
-        <div class="cont_nombres"> <!-- contenedor de los nombres y apellidos -->
-            <div class="nombres">
-                <p>Nombres</p>
-                <input class="cuadro_nom_apell" name="nombre" type="text" placeholder="Ingrese sus nombres"> <!-- cuadro de los nombres -->
+        <div class="cont_formulario_izq"><!-- contenedor del formulario izquierda -->
+            <!-- informacion personal -->
+            <div class="cont_titulo"><!-- contenedor del titulo -->
+                <h3 class="titulo">Información Personal</h3>
             </div>
-            <div class="apellidos">
-                <p>Apellidos</p>
-                <input class="cuadro_nom_apell" name="apellido" type="text" placeholder="Ingrese sus apellidos"> <!-- cuadro de los apellidos -->
+            <div class="cont_nombres"> <!-- contenedor de los nombres y apellidos -->
+                <div class="nombres">
+                    <p>Nombres</p>
+                    <input class="cuadro_nom_apell" name="nombre" type="text" placeholder="Ingrese sus nombres"> <!-- cuadro de los nombres -->
+                </div>
+                <div class="apellidos">
+                    <p>Apellidos</p>
+                    <input class="cuadro_nom_apell" name="apellido" type="text" placeholder="Ingrese sus apellidos"> <!-- cuadro de los apellidos -->
+                </div>
             </div>
-        </div>
-        <div class="cont_nac_ced">
-            <div class="cont_fecha_nac"> <!-- contenedor de la fecha de nacimiento -->
-                <p>Fecha de Nacimiento</p>
-                <input class="fecha" name="fechanac" type="date" placeholder="dia"> <!-- cuadro del ingreso de la fecha -->
+            <div class="cont_nac_ced">
+                <div class="cont_fecha_nac"> <!-- contenedor de la fecha de nacimiento -->
+                    <p>Fecha de Nacimiento</p>
+                    <input class="fecha" name="fechanac" type="date" placeholder="dia"> <!-- cuadro del ingreso de la fecha -->
+                </div>
+                <div class="cont_id"> <!-- contenedor de la cedula -->
+                    <p>Cedula de Ciudadania</p>
+                    <input class="cedula" name="identificacion" type="text" placeholder="Ingrese su cedula" required="" pattern="[0-9]+" minlength="10" maxlength="10"> <!-- cuadro de la cedula -->
+                </div>
             </div>
-            <div class="cont_id"> <!-- contenedor de la cedula -->
-                <p>Cedula de Ciudadania</p>
-                <input class="cedula" name="identificacion" type="text" placeholder="Ingrese su cedula" required="" pattern="[0-9]+" minlength="10" maxlength="10"> <!-- cuadro de la cedula -->
+            <!-- informacion cuenta -->
+            <div class="cont_titulo"> <!-- contenedor del titulo -->
+                <h3 class="titulo">Cuenta</h3>
             </div>
-        </div>
-        <!-- informacion cuenta -->
-        <div class="cont_titulo"> <!-- contenedor del titulo -->
-            <h3 class="titulo">Cuenta</h3>
-        </div>
-        <div class="cont_correo"> <!-- contenedor del correo -->
-            <p>Correo</p>
-            <input class="cuadro" name="vercorreo" type="text" placeholder="Ingrese su correo"> <!-- cuadro del correo -->
-        </div>
-        <div class="cont_pass"> <!-- contenedor de la contraseña -->
-            <p>Contraseña</p>
-            <input class="cuadro" type="password" placeholder="Ingrese su contraseña"> <!-- cuadro de la contraseña -->
-        </div>
-        <div class="cont_pass_conf"> <!-- contenedor de la confirmacion de la cedula -->
-            <p>Verificación de Contraseña</p>
-            <input class="cuadro" name="contraseña" type="password" placeholder="Confirme su contraseña"> <!-- cuadro de la verificación de contraseña -->
-        </div>
-    </div>
-
-    <div class="cont_formulario_der"><!-- contenedor del formulario derecha -->
-        <!-- informacion de contacto -->
-        <div class="cont_titulo"> <!-- contenedor del titulo -->
-            <h3 class="titulo">Información de Contacto</h3>
+            <div class="cont_correo"> <!-- contenedor del correo -->
+                <p>Correo</p>
+                <input class="cuadro" name="vercorreo" type="text" placeholder="Ingrese su correo"> <!-- cuadro del correo -->
+            </div>
+            <div class="cont_pass"> <!-- contenedor de la contraseña -->
+                <p>Contraseña</p>
+                <input class="cuadro" type="password" placeholder="Ingrese su contraseña"> <!-- cuadro de la contraseña -->
+            </div>
+            <div class="cont_pass_conf"> <!-- contenedor de la confirmacion de la cedula -->
+                <p>Verificación de Contraseña</p>
+                <input class="cuadro" name="contraseña" type="password" placeholder="Confirme su contraseña"> <!-- cuadro de la verificación de contraseña -->
+            </div>
         </div>
 
-        <div class="cont_direccion_barrio"> <!-- contenedor de la direccion y barrio -->
-            <div class="cont_direccion"> <!-- contenedor del cuadro de la direccion -->
-                <p>Dirección</p>
-                <input class="direccion" name="direccion" type="text" placeholder="Ingrese su dirección de residencia"> <!-- cuadro de la dirección -->
+        <div class="cont_formulario_der"><!-- contenedor del formulario derecha -->
+            <!-- informacion de contacto -->
+            <div class="cont_titulo"> <!-- contenedor del titulo -->
+                <h3 class="titulo">Información de Contacto</h3>
             </div>
-            <div class="cont_barrio"> <!-- contenedor del barrio -->
-                <p>Barrio</p>
-                <input class="barrio" name="barrio" type="text" placeholder="Ingrese su barrio"> <!-- cuadro del barrio -->
-            </div>
-        </div>
-        <div class="cont_telefono"> <!-- contenedor del telefono -->
-            <p>Telefono</p>
-            <input class="telefono" name="telefono" type="text" placeholder="Ingrese su numero de telefono"> <!-- cuadro del barrio -->
-        </div>
-        <div class="cont_terminos"> <!-- contenedor de los terminos y condiciones -->
-            <p>Al registrarse acepta los terminos y condiciones</p>
-        </div>
-        <div class="cont_botones"> <!-- contenedor de los botones del formulario -->
-            <input class="boton" type="submit" value="Enviar"> <!-- boton de enviar los datos hacia el formulario -->
-            <input class="boton" type="reset" value="Borrar"> <!-- boton de borrar los datos del formulario -->
-        </div>
-    </div>
 
-    </form>
+            <div class="cont_direccion_barrio"> <!-- contenedor de la direccion y barrio -->
+                <div class="cont_direccion"> <!-- contenedor del cuadro de la direccion -->
+                    <p>Dirección</p>
+                    <input class="direccion" name="direccion" type="text" placeholder="Ingrese su dirección de residencia"> <!-- cuadro de la dirección -->
+                </div>
+                <div class="cont_barrio"> <!-- contenedor del barrio -->
+                    <p>Barrio</p>
+                    <input class="barrio" name="barrio" type="text" placeholder="Ingrese su barrio"> <!-- cuadro del barrio -->
+                </div>
+            </div>
+            <div class="cont_telefono"> <!-- contenedor del telefono -->
+                <p>Telefono</p>
+                <input class="telefono" name="telefono" type="text" placeholder="Ingrese su numero de telefono"> <!-- cuadro del barrio -->
+            </div>
+            <div class="cont_terminos"> <!-- contenedor de los terminos y condiciones -->
+                <p>Al registrarse acepta los terminos y condiciones</p>
+            </div>
+            <div class="cont_botones"> <!-- contenedor de los botones del formulario -->
+                <input class="boton" type="submit" value="Enviar"> <!-- boton de enviar los datos hacia el formulario -->
+                <input class="boton" type="reset" value="Borrar"> <!-- boton de borrar los datos del formulario -->
+            </div>
+        </div>
+
+        </form>
 
     </body>
 

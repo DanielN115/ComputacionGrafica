@@ -53,3 +53,10 @@ function multiplicar1() {
         document.getElementById("total_compra").innerHTML = total_compra;
     }
 
+    function continuar() {
+        alert('Pago realizado correctamente');
+        ocultarCuadroDialogo();
+      }
+
+
+
