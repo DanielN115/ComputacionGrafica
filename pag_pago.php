@@ -59,20 +59,20 @@
 
 		<div class="cuerpo">
 
-			<form>
+			<form  action="pago.php" method="post" >
 
 				<div class="cont_formulario">
 
 					<h1>Formulario de Pago</h1>
 
 					<label for="pago-total">Pago Total:</label>
-					<input type="number" id="pago-total" name="pago-total" required>
+					<input type="number" id="pago-total" name="pagototal" required>
 
 					<br>
 
 					<label for="metodo-pago">Método de Pago:</label>
 
-					<select id="metodo-pago" name="metodo-pago" required>
+					<select id="metodo-pago" name="metodopago" required>
 
 						<option value="">Selecciona una opción</option>
 						<option value="tarjeta">Tarjeta de Crédito</option>

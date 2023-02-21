@@ -16,7 +16,8 @@ $consulta=pg_query($conexion,$query);
 pg_close();
 
     echo "<br>";
-    echo "cliente resgistrado";
+    header("location:login.html");
+    echo '<script language="javascript">alert("usuario registrado");</script>';
 
 
 

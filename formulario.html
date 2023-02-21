@@ -68,17 +68,17 @@
         <div class="cont_nombres"> <!-- contenedor de los nombres y apellidos -->
             <div class="nombres">
                 <p>Nombres</p>
-                <input class="cuadro_nom_apell" name="nombre" type="text" placeholder="Ingrese sus nombres"> <!-- cuadro de los nombres -->
+                <input class="cuadro_nom_apell" name="nombre" type="text" placeholder="Ingrese sus nombres"  required="" minlength="3" maxlength="30"> <!-- cuadro de los nombres -->
             </div>
             <div class="apellidos">
                 <p>Apellidos</p>
-                <input class="cuadro_nom_apell" name="apellido" type="text" placeholder="Ingrese sus apellidos"> <!-- cuadro de los apellidos -->
+                <input class="cuadro_nom_apell" name="apellido" type="text" placeholder="Ingrese sus apellidos"  required="" minlength="3" maxlength="30"> <!-- cuadro de los apellidos -->
             </div>
         </div>
         <div class="cont_nac_ced">
             <div class="cont_fecha_nac"> <!-- contenedor de la fecha de nacimiento -->
                 <p>Fecha de Nacimiento</p>
-                <input class="fecha" name="fechanac" type="date" placeholder="dia"> <!-- cuadro del ingreso de la fecha -->
+                <input class="fecha"  min="2015-01-1" max ="2015-12-31" name="fechanac" type="date" placeholder="dia"  required=""> <!-- cuadro del ingreso de la fecha -->
             </div>
             <div class="cont_id"> <!-- contenedor de la cedula -->
                 <p>Cedula de Ciudadania</p>
@@ -91,15 +91,15 @@
         </div>
         <div class="cont_correo"> <!-- contenedor del correo -->
             <p>Correo</p>
-            <input class="cuadro" name="vercorreo" type="text" placeholder="Ingrese su correo"> <!-- cuadro del correo -->
+            <input class="cuadro" name="vercorreo" type="text" placeholder="Ingrese su correo"  required=""> <!-- cuadro del correo -->
         </div>
         <div class="cont_pass"> <!-- contenedor de la contraseña -->
             <p>Contraseña</p>
-            <input class="cuadro" type="password" placeholder="Ingrese su contraseña"> <!-- cuadro de la contraseña -->
+            <input class="cuadro" type="password" placeholder="Ingrese su contraseña"  required=""> <!-- cuadro de la contraseña -->
         </div>
         <div class="cont_pass_conf"> <!-- contenedor de la confirmacion de la cedula -->
             <p>Verificación de Contraseña</p>
-            <input class="cuadro" name="contraseña" type="password" placeholder="Confirme su contraseña"> <!-- cuadro de la verificación de contraseña -->
+            <input class="cuadro" name="contraseña" type="password" placeholder="Confirme su contraseña"  required=""> <!-- cuadro de la verificación de contraseña -->
         </div>
     </div>
 
@@ -112,16 +112,16 @@
         <div class="cont_direccion_barrio"> <!-- contenedor de la direccion y barrio -->
             <div class="cont_direccion"> <!-- contenedor del cuadro de la direccion -->
                 <p>Dirección</p>
-                <input class="direccion" name="direccion" type="text" placeholder="Ingrese su dirección de residencia"> <!-- cuadro de la dirección -->
+                <input class="direccion" name="direccion" type="text" placeholder="Ingrese su dirección de residencia"  required=""> <!-- cuadro de la dirección -->
             </div>
             <div class="cont_barrio"> <!-- contenedor del barrio -->
                 <p>Barrio</p>
-                <input class="barrio" name="barrio" type="text" placeholder="Ingrese su barrio"> <!-- cuadro del barrio -->
+                <input class="barrio" name="barrio" type="text" placeholder="Ingrese su barrio"  required=""> <!-- cuadro del barrio -->
             </div>
         </div>
         <div class="cont_telefono"> <!-- contenedor del telefono -->
             <p>Telefono</p>
-            <input class="telefono" name="telefono" type="text" placeholder="Ingrese su numero de telefono"> <!-- cuadro del barrio -->
+            <input class="telefono" name="telefono" type="text" placeholder="Ingrese su numero de telefono"  required="" pattern="[0-9]+" minlength="10" maxlength="10"> <!-- cuadro del barrio -->
         </div>
         <div class="cont_terminos"> <!-- contenedor de los terminos y condiciones -->
             <p>Al registrarse acepta los terminos y condiciones</p>
