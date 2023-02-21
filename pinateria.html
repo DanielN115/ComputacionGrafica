@@ -52,7 +52,7 @@
 
 				<div class="cont_carrito"> <!-- contenedor del logo del carrito -->
 					<img class="carrito_icono" src="iconos/shopping-cart.png">
-					<button class="carrito" onclick="location.href='pago.html'">Carrito</button>
+					<button class="carrito" onclick="location.href='pag_pago.php'">Carrito</button>
 				</div>
 			</div>
 		</div>
@@ -66,10 +66,12 @@
 					<h2>Tarjetas</h2>
 					<p>Diferentes tipos de tarjetas para diferentes celebraciones.</p>
 					<p data-precio="5000" data-cantidad="1" id="precio1" value="5000">$ 5000</p>
+
 					<div class="quantity">
 						<label for="quantity1">Cantidad:</label>
 						<input type="number" id="quantity1" name="quantity1" min="1" max="20" value="1">
 					</div>
+
 					<button onclick="multiplicar1()">Agregar al carrito</button>
 					<p>El resultado es: $ <span id="resultado1"></span></p>
 				</div>
@@ -137,6 +139,11 @@
 					</div>
 					<button onclick="multiplicar6()">Agregar al carrito</button>
 					<p>El resultado es: $ <span id="resultado6"></span></p>
+				</div>
+
+				<div class="card">
+					<button onclick="dar_total()"> Total Compra</button>
+					<p>El total de la compra es: $ <span id="total_compra"></span></p>
 				</div>
 			</div>
 		</div>
