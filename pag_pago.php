@@ -32,30 +32,34 @@
 				</div>
 			</div>
 		
+			
 			<div class="cont_cuenta"> <!-- contenedor de los iconos de usuario y carrito -->
-				
-				<div class="cont_usuario"> <!-- contenedor del logo de usuario -->
-                    <img class="user" src="iconos/user.png">
-                    
-             <tbody> 
-             <?php
-                while($obj=pg_fetch_object($consulta)){?>
-             <tr>
-                <td> <?php echo $obj->sname;?> </td>
-                <td> <?php echo $obj->apellido; ?> </td>    
-            </tr>
-                 <?php } ?>            
-            </tbody>
-                </div>
+        
+        <div class="cont_usuario"> <!-- contenedor del logo de usuario -->
+        <img class="user" src="iconos/user.png">
+        <nav>
+            <ul>
+                <li><a href="#">         
+                    <?php while($obj=pg_fetch_object($consulta)){?>
+                                        <?php echo $obj->sname;?> 
+                                            <?php } ?>     
+                        </a>
+                            <ul>
+                                <li><a href="cerrar_sesion.php">Cerrar sesion</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
-				<div class="cont_carrito"> <!-- contenedor del logo del carrito -->
-					<img class="carrito_icono" src="iconos/shopping-cart.png">
-					<button class="carrito" onclick="location.href='pag_pago.php'">Carrito</button>
-				</div>
-			</div>
-		
-		
-		</div> <!-- fin del banner -->
+            <div class="cont_carrito"> <!-- contenedor del logo del carrito -->
+                <img class="carrito_icono" src="iconos/shopping-cart.png">
+                <button class="carrito" onclick="location.href='pag_pago.php'">Carrito</button>
+            </div>
+        </div>
+    
+    
+    </div> <!-- fin del banner -->
 
 		<div class="cuerpo">
 

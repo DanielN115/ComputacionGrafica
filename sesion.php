@@ -16,6 +16,8 @@ if($cantidad>0){
     echo '<script language="javascript">alert("inicio de sesion exitoso");</script>';
 }else{
     echo '<script language="javascript">alert("datos incorrectos");</script>';;
+    
+    header("Location: login.html");
 }
 
 ?>
